@@ -1,0 +1,123 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+  font: 400 14px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #444;
+  letter-spacing: 0.6px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}
+
+body {
+  font: 400 14px/1.4 'OpenSans', sans-serif;
+  background: $white;
+}
+
+* {
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  -ms-interpolation-mode: bicubic;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+input, textarea, button, a {
+  transition: 0.2s color ease, 0.2s background ease;
+  &:focus {
+    outline: none;
+  }
+}
+
+input,
+textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: #d82c99;
+  color: $white;
+  text-shadow: none;
+}
+::-moz-selection {
+  background: #d82c99;
+  color: $white;
+  text-shadow: none;
+}
+::-webkit-selection {
+  background: #d82c99;
+  color: $white;
+  text-shadow: none;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "kendo-starter",
+  "description": "Kendo UI ES6 component based boilerplate with sensible defaults",
+  "main": "index.js",
+  "authors": [
+    "@toddmotto"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "kendo"
+  ],
+  "homepage": "https://github.com/kendo-labs/kendo-starter",
+  "moduleType": []
+}

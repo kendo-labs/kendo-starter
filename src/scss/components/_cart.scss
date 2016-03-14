@@ -1,0 +1,133 @@
+.cart {
+  background: $white;
+  padding: 25px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  &__promo {
+    background: #89be5d;
+    color: $white;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+    label {
+      span {
+        display: inline-block;
+        margin: 0 10px 0 0;
+      }
+    }
+    input {
+      border: 0;
+      border-radius: 3px;
+      padding: 5px 10px;
+      font-size: 12px;
+      height: 32px;
+    }
+    button {
+      background: darken(#89be5d, 20%);
+      border: 0;
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-size: 12px;
+      height: 32px;
+      vertical-align: middle;
+      color: $white;
+    }
+  }
+  &__title {
+    margin: 0;
+  }
+  &__count {
+    background: #4da2db;
+    color: $white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    img {
+      width: 18px;
+    }
+  }
+  &__invalid {
+    color: #a94442;
+    height: 32px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background: #f2dede;
+  }
+  &__total {
+    text-align: right;
+  }
+  &__grand {
+    font-size: 22px;
+    font-weight: 900;
+  }
+  &__savings {
+    color: #aaa;
+  }
+  &__items {
+
+  }
+  &__item {
+    display: table;
+    width: 100%;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e5e5e5;
+    &--header {
+      font-size: 12px;
+      font-weight: 900;
+      background: #f5f5f5;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+    &-quantity {
+      overflow: hidden;
+      vertical-align: middle;
+      display: table-cell;
+      width: 20%;
+      input {
+        float: left;
+        width: 50px;
+        text-align: center;
+      }
+      button {
+        background: #f5f5f5;
+        transition: background 0.2s ease-in-out;
+        border: 0;
+        border-radius: 3px;
+        float: left;
+        width: 30px;
+        &:hover {
+          background: darken(#f5f5f5, 5%);
+        }
+        img {
+          width: 16px;
+        }
+      }
+    }
+    &-name {
+      display: table-cell;
+      width: 40%;
+    }
+    &-price {
+      display: table-cell;
+      width: 20%;
+    }
+    &-total {
+      display: table-cell;
+      width: 10%;
+    }
+    &-remove {
+      text-align: right;
+      width: 10%;
+      display: table-cell;
+      a {
+        opacity: .4;
+        transition: opacity .2s ease-in-out;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

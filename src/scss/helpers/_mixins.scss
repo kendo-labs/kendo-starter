@@ -1,0 +1,22 @@
+// Breakpoint mixin
+@mixin rezise-at($size) {
+
+  @if $size == "mobile" {
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+
+  @else if $size == "tablet" {
+    @media only screen and (min-width: 480px) and (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @else if $size == "desktop" {
+    @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+      @content;
+    }
+  }
+
+}
